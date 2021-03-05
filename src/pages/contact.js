@@ -8,7 +8,11 @@ const ContactPage = () => {
         <h1>Contact</h1>
         <p>
           Find me on twitter
-          <a href="https://twitter.com/mccarthy_thom" target="_blank">
+          <a
+            href="https://twitter.com/mccarthy_thom"
+            target="_blank"
+            rel="noreferrer"
+          >
             @mccarthythom
           </a>
         </p>

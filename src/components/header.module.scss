@@ -1,0 +1,30 @@
+.header {
+  padding: 1rem 0 3rem;
+}
+
+.navitem {
+  color: firebrick;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.navitem:hover {
+  color: #666666;
+}
+
+.title {
+  color: firebrick;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.navlist {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.activenavitem {
+  color: #333333;
+}

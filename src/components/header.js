@@ -8,7 +8,7 @@ import {
   navlist,
   activenavitem,
 } from "./header.module.scss"
-
+// located in gatsby-config
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {

@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: "Thom's Grooves and Gems",
+    title: "Thom's Groovie Gems",
     author: "Thom McCarthy",
   },
+
   plugins: [
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: "jxf3shtro1bz",
-        accessToken: "ZSFtBnSFR3KWClb4dAQxPy_ASz_Cgfn5URgOx95HM8w",
+        spaceId: (process.env.CONTENTFUL_SPACE_ID = jxf3shtro1bz),
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     "gatsby-plugin-sass",
@@ -37,3 +38,7 @@ module.exports = {
     },
   ],
 }
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})

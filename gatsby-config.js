@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Portfolio",
+    title: "Thom's Grooves and Gems",
     author: "Thom McCarthy",
   },
   plugins: [
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: "jxf3shtro1bz",
+        accessToken: "ZSFtBnSFR3KWClb4dAQxPy_ASz_Cgfn5URgOx95HM8w",
       },
     },
     "gatsby-plugin-sass",
